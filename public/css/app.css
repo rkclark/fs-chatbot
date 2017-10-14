@@ -45,6 +45,8 @@ div {
 
 #contentParent {
   height: 100%;
+  background-color: #f2f2f2;
+  padding-bottom: 1rem;
 }
 
 .responsive-columns-wrapper {
@@ -72,7 +74,7 @@ div {
   padding: 0.9375rem 0 0.625rem 0;
   margin: auto;
   text-align: left;
-  max-width: 25rem;
+  max-width: 28rem;
   min-width: 9.375rem;
 }
 
@@ -81,6 +83,8 @@ div {
   overflow-y: auto;
   overflow-x: hidden;
   height: calc(100% - 4rem);
+  background-color: white;
+  padding: 1rem;
 }
 
 .message-inner {
@@ -100,7 +104,7 @@ div {
   -ms-transition-timing-function: ease-in;
   transition-property: opacity, margin-top;
   transition-duration: 0.75s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
 }
 
 .load .message-inner {
@@ -201,7 +205,6 @@ div {
   padding-left: 0.125rem;
   margin-bottom: -0.125rem;
   font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
-
 }
 
 #textInput.underline {
@@ -254,13 +257,15 @@ input:-moz-placeholder {
   color: #fff;
   overflow-x: auto;
 
-  width: 45%;
-  max-width: 32.0625rem;
-  min-width: 29.6875rem;
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 #payload-column.full {
   width: 100%;
+  opacity: 100;
+  height: 100%;
   max-width: none;
   min-width: initial;
 }
